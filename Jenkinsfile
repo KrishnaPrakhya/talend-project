@@ -6,14 +6,14 @@ pipeline {
     }
 
     parameters {
-        string(name: 'CSV_FILE_PATH', defaultValue: 'C:\Users\nagak\OneDrive\Desktop\customers.csv')
+        string(name: 'CSV_FILE_PATH', defaultValue: 'C:/Users/nagak/OneDrive/Desktop/customers.csv')
     }
 
     stages {
-        stage('Checkout') {
+        stage('Checkout Code') {
             steps {
-                git branch: 'main',
-                    url: 'https://github.com/KrishnaPrakhya/talend-project/'
+                git branch: 'main', 
+                    url: 'http://github.com/KrishnaPrakhya/talend-project'
             }
         }
 
